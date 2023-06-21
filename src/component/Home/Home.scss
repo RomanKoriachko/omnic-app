@@ -1,0 +1,43 @@
+.home {
+    > p {
+        text-align: center;
+    }
+    .home-title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        padding-top: 120px;
+        padding-bottom: 12px;
+    }
+    .home-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 68px;
+    }
+    .home-items-wrapper {
+        justify-content: center;
+        gap: 60px;
+        .home-item {
+            > img {
+                margin-bottom: -3px;
+            }
+            .home-btn {
+                background: #032edd;
+                color: white;
+                padding: 20px 0px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 128%;
+                text-transform: uppercase;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                .home-btn-text {
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

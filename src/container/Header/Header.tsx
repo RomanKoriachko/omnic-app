@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.scss'
 
 type Props = {}
@@ -14,7 +15,6 @@ const Header = (props: Props) => {
                 return res.json()
             })
             .then((data) => {
-                console.log(data)
                 setDeviceNumber(data.data.device)
             })
     }, [])
@@ -23,18 +23,20 @@ const Header = (props: Props) => {
         <header className="header">
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <a href="/">
+                    <Link to={'/'}>
                         <img
                             src="images/logo.svg"
                             alt=""
                             className="header-logo-img"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="row header-buttons">
-                    <p className="header-instructions-btn">ІНСТРУКЦІЯ</p>
+                    <Link to={'/instructions'}>
+                        <p className="header-instructions-btn">ІНСТРУКЦІЯ</p>
+                    </Link>
                     <p className="header-device-number">
-                        Поштомат № {deviceNumber}
+                        Поштомат №{deviceNumber}
                     </p>
                 </div>
             </div>

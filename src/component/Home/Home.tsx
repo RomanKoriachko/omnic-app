@@ -11,24 +11,26 @@ const Home = (props: Props) => {
                 <p className="home-title">Вітаємо вас!</p>
                 <p className="home-subtitle">Що відправлятимемо сьогодні?</p>
                 <div className="row home-items-wrapper">
-                    <div className="home-item">
-                        <img src="images/post-machine.png" alt="" />
-                        <Link to={'/package'}>
+                    <Link to={'/package'}>
+                        <div className="home-item">
+                            <img src="images/post-machine.png" alt="" />
                             <div className="home-btn">
                                 <p className="home-btn-text">
                                     Надіслати посилку через поштомат
                                 </p>
                             </div>
-                        </Link>
-                    </div>
-                    <div className="home-item">
-                        <img src="images/shop.png" alt="" />
-                        <div className="home-btn">
-                            <p className="home-btn-text">
-                                Повернення до інтернет магазину
-                            </p>
                         </div>
-                    </div>
+                    </Link>
+                    <Link to={'/'}>
+                        <div className="home-item">
+                            <img src="images/shop.png" alt="" />
+                            <div className="home-btn">
+                                <p className="home-btn-text">
+                                    Повернення до інтернет магазину
+                                </p>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

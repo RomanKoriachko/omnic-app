@@ -1,0 +1,60 @@
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 4px solid #e6e6e6;
+    .header-logo {
+        border-bottom: 4px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #032edd, #011461);
+        padding-left: 45px;
+        max-width: 360px;
+        margin-bottom: -4px;
+        .header-logo-img {
+            padding: 30px 0px 16px;
+        }
+    }
+    .header-buttons {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 44px;
+        padding-right: 45px;
+        .header-instructions-btn {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .header-device-number {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+            color: #032edd;
+            min-width: 215px;
+        }
+    }
+}
+
+// Tablet
+@media (max-width: 992px) {
+    .header-wrapper {
+        .header-buttons {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 576px) {
+    .header-wrapper {
+        grid-template-columns: 1fr;
+        .header-logo {
+            max-width: 100%;
+        }
+        .header-buttons {
+            padding: 15px 0px;
+            gap: 15px;
+        }
+    }
+}

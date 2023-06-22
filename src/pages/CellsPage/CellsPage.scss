@@ -34,6 +34,7 @@
             box-shadow: 0 0 6px rgba(85, 115, 133, 0.4);
             align-items: center;
             justify-content: space-evenly;
+            cursor: pointer;
             .cell-item-size-1 {
                 font-weight: 700;
                 font-size: 20px;
@@ -44,6 +45,22 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 17.07px;
+            }
+        }
+        .is-empty-false {
+            box-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+        .is-empty-true {
+            transition: 0.3s all;
+            &:hover {
+                box-shadow: 0 0 6px #032edd;
+            }
+        }
+        .is-active-true {
+            background-color: rgba(43, 255, 0, 0.4);
+            &:hover {
+                box-shadow: 0 0 6px rgba(43, 255, 0, 1);
             }
         }
     }
@@ -66,9 +83,11 @@
             color: #032edd;
         }
         .cells-confirm-btn {
-            color: #032edd;
+            color: #7a7a7a;
+            border-color: #7a7a7a;
         }
-        .active {
+        .is-disabled-false {
+            transition: 0.3s all;
             background-color: #032edd;
             color: white;
         }

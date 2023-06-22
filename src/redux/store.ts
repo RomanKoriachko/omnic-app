@@ -1,7 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
+import cellTypeReducer from './cellTypesReducer'
+import activeCellReducer from './activeCellReducer'
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        cellTypeState: cellTypeReducer,
+        activeCellState: activeCellReducer,
+    },
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

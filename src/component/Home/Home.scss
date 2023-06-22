@@ -34,10 +34,14 @@
                 text-transform: uppercase;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
+                transition: 0.3s all;
                 .home-btn-text {
                     max-width: 300px;
                     margin: 0 auto;
                 }
+            }
+            &:hover .home-btn {
+                background-color: #0022a8;
             }
         }
     }

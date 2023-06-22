@@ -54,6 +54,10 @@
         line-height: 25.6px;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            background-color: #0022a8;
+        }
     }
 }
 

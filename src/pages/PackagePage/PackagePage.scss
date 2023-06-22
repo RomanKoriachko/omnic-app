@@ -38,18 +38,25 @@
             font-size: 20px;
             line-height: 128%;
             cursor: pointer;
+            transition: 0.3s all;
         }
         .package-not-confirm-btn {
-            background-color: transparent;
+            background-color: white;
             color: #032edd;
             padding-left: 50px;
             padding-right: 50px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
         }
         .package-confirm-btn {
             background-color: #032edd;
             color: white;
             padding-left: 36px;
             padding-right: 36px;
+            &:hover {
+                background-color: #0022a8;
+            }
         }
     }
 }

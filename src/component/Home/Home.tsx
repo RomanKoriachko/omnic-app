@@ -21,7 +21,7 @@ const Home = (props: Props) => {
                             </div>
                         </div>
                     </Link>
-                    <Link to={'/'}>
+                    <Link to={'/shop'}>
                         <div className="home-item">
                             <img src="images/shop.png" alt="" />
                             <div className="home-btn">

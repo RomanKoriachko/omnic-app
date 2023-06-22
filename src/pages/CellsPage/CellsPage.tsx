@@ -191,12 +191,14 @@ const CellsPage = (props: Props) => {
                     <Link to={'/package'}>
                         <button className="cells-not-confirm-btn">НАЗАД</button>
                     </Link>
-                    <button
-                        className={`cells-confirm-btn is-disabled-${selectedCellState.isBtnDisabled}`}
-                        disabled={selectedCellState.isBtnDisabled}
-                    >
-                        ПІДТВЕРДИТИ
-                    </button>
+                    <Link to={'/confirmation'}>
+                        <button
+                            className={`cells-confirm-btn is-disabled-${selectedCellState.isBtnDisabled}`}
+                            disabled={selectedCellState.isBtnDisabled}
+                        >
+                            ПІДТВЕРДИТИ
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

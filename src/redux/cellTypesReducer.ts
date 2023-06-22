@@ -2,6 +2,10 @@ import { createSlice } from '@reduxjs/toolkit'
 
 type CellType = {
     has_empty: boolean
+    params?: {
+        width: number
+        height: number
+    }
 }
 
 const initialState: CellType[] = [

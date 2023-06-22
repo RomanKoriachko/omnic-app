@@ -6,6 +6,7 @@ import LayoutComponent from '../../component/LayoutComponent/LayoutComponent'
 import InstructionsPage from '../../pages/InstructionsPage/InstructionsPage'
 import PackagePage from '../../pages/PackagePage/PackagePage'
 import CellsPage from '../../pages/CellsPage/CellsPage'
+import ConfirmationPage from '../../pages/ConfirmationPage/ConfirmationPage'
 
 function App() {
     // async function getData(link: string) {
@@ -37,6 +38,10 @@ function App() {
                     />
                     <Route path="/package" element={<PackagePage />} />
                     <Route path="/available_cells" element={<CellsPage />} />
+                    <Route
+                        path="/confirmation"
+                        element={<ConfirmationPage />}
+                    />
                 </Route>
             </Routes>
         </div>
